@@ -1,8 +1,8 @@
-// models/MenuItem.js
+
 
 const mongoose = require('mongoose');
 
-// Define the schema for a menu item
+
 const menuItemSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -14,7 +14,7 @@ const menuItemSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ['food', 'drink', 'brunch'], // Restrict category to these options
+    enum: ['food', 'drink', 'brunch'], 
     required: true,
   },
   description: {
@@ -22,10 +22,10 @@ const menuItemSchema = new mongoose.Schema({
     required: true,
   },
   imageUrl: {
-    type: String, // Optional field for storing image URL if needed
+    type: String, 
   }
 }, {
-  timestamps: true // Automatically adds createdAt and updatedAt timestamps
+  timestamps: true 
 });
 
 module.exports = mongoose.model('MenuItem', menuItemSchema);

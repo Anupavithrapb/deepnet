@@ -1,24 +1,4 @@
-// import React from 'react';
-// import '../Css/Navbar.css';
 
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <div className="navbar-logo">
-//         <img src="https://www.deepnetsoft.com/images/logo.png" alt="Deep Net Soft" />
-//         {/* <span>DEEP NET SOFT</span> */}
-//       </div>
-//       <ul className="navbar-links">
-//         <li><a href="/home">Home</a></li>
-//         <li><a href="/">Menu</a></li>
-//         <li><a href="/reservation">Make a Reservation</a></li>
-//         <li><a href="/contact">Contact Us</a></li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
 import React, { useState } from 'react';
 import '../Css/Navbar.css';
 

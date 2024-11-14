@@ -1,4 +1,4 @@
-/* Footer.css */
+
 
 .footer {
   background-color: #1b1b1b;
@@ -87,7 +87,7 @@
   text-decoration: underline;
 }
 
-/* Responsive Footer */
+
 @media (max-width: 768px) {
   .footer-sections {
     flex-direction: column;

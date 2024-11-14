@@ -5,7 +5,7 @@ import '../Css/MenuPage.css';
 
 const MenuPage = () => {
   const [menuItems, setMenuItems] = useState([]);
-  const [category, setCategory] = useState('food'); // Default category
+  const [category, setCategory] = useState('food');
 
   useEffect(() => {
     fetchMenuItems(category);

@@ -1,7 +1,6 @@
 
-  // src/pages/JuicePage.js
 import React, { useEffect, useState } from 'react';
-// import axios from 'axios';
+
 import axios from './axiosConfig';
 
 
@@ -18,7 +17,7 @@ const DrinksPage = () => {
 
   return (
     <div>
-      <h2>Juice Menu</h2>
+      <h2>Drink Menu</h2>
       {menuItems.map(item => (
         <div key={item._id}>
           <h3>{item.name}</h3>
