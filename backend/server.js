@@ -4,8 +4,17 @@ const cors = require('cors');
 const menuRoutes = require('./Routes/menu');
 
 const app = express();
-app.use(cors());
-app.use(express.json());
+app.use(cors()); // Enable CORS for all routes
+
+
+const corsOptions = {
+  origin: process.env.FRONTEND_URL, 
+  methods: ['GET', 'POST','PATCH','PUT','DELETE'],
+  allowedHeaders: ['Content-Type'],
+            
+};
+
+app.use(cors(corsOptions));
 
 // Connection string with database name specified and without special characters in password
 mongoose.connect('mongodb+srv://anupavithrapb:Anu%402000@cluster0.cauyb.mongodb.net/deepnet', {
