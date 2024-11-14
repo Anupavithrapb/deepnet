@@ -1,0 +1,111 @@
+/* MenuPage.css */
+
+body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.menu-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.menu-header h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.menu-header p {
+  text-align: center;
+  font-size: 16px;
+  color: #b3b3b3;
+  margin-bottom: 30px;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu-nav button {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-nav button.active {
+  background-color: #0077b6;
+}
+
+.menu-nav button:hover {
+  color: #ffffff;
+}
+
+.menu-items {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  background-color: #0a0a0a;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #0a0a0a;
+  padding: 15px 0;
+}
+
+.menu-item h3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #e8e8e8;
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #d2cfcf;
+}
+
+.menu-item h3 span {
+  font-weight: normal;
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+.menu-item p {
+  font-size: 16px;
+  color: #b3b3b3;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .menu-page {
+    padding: 10px;
+  }
+  
+  .menu-nav {
+    flex-direction: column;
+  }
+  
+  .menu-nav button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+  
+  .menu-item h3 {
+    font-size: 18px;
+  }
+  
+  .menu-item p {
+    font-size: 14px;
+  }
+}
