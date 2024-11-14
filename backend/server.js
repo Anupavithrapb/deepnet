@@ -7,7 +7,7 @@ const menuRoutes = require('./Routes/menu');
 require('dotenv').config();
 
 const app = express();
-app.use(cors()); // Enable CORS for all routes
+// app.use(cors()); 
 const corsOptions = {
   origin: process.env.FRONTEND_URL,
   methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
